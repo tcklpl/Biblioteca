@@ -1,0 +1,3 @@
+﻿INSERT INTO users (name, hash, salt, iterations, accType, birth, email) VALUES ("Raiz", "RzKJgtvF3GmseoYr7O1E4CLpeXvBhjaC7jGMJzUnOPaW1Nnz+nHyF5zgDoUG9AQZctiQK1zYpOJB3v+qCBGPSddP49hCmxXm/y7/e
+WWbWmZXDN+54myxYw+uLIu1CEXzWKbm+vVH4U5AvF77tQHriMsvM5+PJtFn+gEaIqhEalDaCoZvD6M8NfgHPmI6C1uNVI0x/q23+CK7xDRIG57mkAbJiobHaiSFvq2dSgT2nvJ9oNG0cPNGnrM4DzpkLY055WETzGMLmHCGlDvIklkSTidIFynH50Qj5+Z
+jds+jPRoe/AVqHDExpxJQL38jXJg6cloQI6D2zYnk0DVbzf2O", "qpMX4eX5smyksQnYGzrn1+e4E/Y=", 1000, 0, "1969-02-08", "pedrinplaycraft@bol.com.br")
