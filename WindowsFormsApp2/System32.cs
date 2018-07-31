@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2 {
@@ -168,6 +169,37 @@ namespace WindowsFormsApp2 {
                     }
                 }
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e) {
+            if (cds != "") {
+                Office.exportToExcel(dataGridView1);
+            } else MessageBox.Show("Selecione uma tabela antes de exportar");
+        }
+
+        private void button12_Click(object sender, EventArgs e) {
+            if(cds != "") {
+                SaveFileDialog sfd = new SaveFileDialog();
+
+                sfd.Filter = "Word Documents (*.docx)|*.docx";
+
+                sfd.FileName = "export.docx";
+
+                if (sfd.ShowDialog() == DialogResult.OK) {
+
+                    Office.Export_Data_To_Word(dataGridView1, sfd.FileName);
+                }
+            } else MessageBox.Show("Selecione uma tabela antes de exportar");
+        }
+
+        private void button13_Click(object sender, EventArgs e) {
+            if (cds != "") {
+                Office.ExportAsPdf(dataGridView1);
+            } else MessageBox.Show("Selecione uma tabela antes de exportar");
         }
     }
 }
